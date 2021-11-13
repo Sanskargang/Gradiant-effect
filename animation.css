@@ -1,0 +1,52 @@
+@import"https://fonts.googleapis.com/css?family=Lato:100";
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+section{
+    width:  1550px;
+     height: 721px;  /* this is used for screen size*/
+    color: #fff;
+    background: linear-gradient(-45deg,#ee7752,#E73C7E,#23A6D5,#23D5AB,black,red,pink);  /* -45 degree is used for colour change animation style*/
+    background-size: 400% 400%;
+    position: relative; /* relative means data arrange from left side*/
+    animation: change 7s ease-in-out infinite;
+}
+h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 50%;    /* it is used for box where the box is settle (it is settle on the middle of screen */
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 3rem 6rem; /* padding is used for square box content and also work on box*/
+}
+h2{
+    font-size: 3rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    top: 87%; /* 87.5*/
+    left: 66%; /* 64.56*/
+    padding: 2rem 3rem;
+}
+@keyframes change{
+  0%  {
+      background-position:0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
